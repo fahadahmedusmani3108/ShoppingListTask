@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Milk",
+    "quantity": 2,
+    "notes": "2% reduced fat",
+    "isBought": false,
+    "createdAt": "2025-05-01T10:00:00Z",
+    "modifiedAt": "2025-05-01T10:00:00Z"
+  },
+  {
+    "id": 2,
+    "title": "Bread",
+    "quantity": 1,
+    "notes": "Whole wheat",
+    "isBought": true,
+    "createdAt": "2025-05-02T11:00:00Z",
+    "modifiedAt": "2025-05-02T11:00:00Z"
+  },
+  {
+    "id": 3,
+    "title": "Eggs",
+    "quantity": 12,
+    "notes": "Organic free range",
+    "isBought": false,
+    "createdAt": "2025-05-03T09:00:00Z",
+    "modifiedAt": "2025-05-03T09:00:00Z"
+  },
+  {
+    "id": 4,
+    "title": "Apples",
+    "quantity": 6,
+    "notes": "Honey crisp",
+    "isBought": true,
+    "createdAt": "2025-05-04T08:00:00Z",
+    "modifiedAt": "2025-05-04T08:00:00Z"
+  }
+]

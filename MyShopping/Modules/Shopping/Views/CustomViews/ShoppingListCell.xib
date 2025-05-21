@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="168" id="KGk-i7-Jjw" customClass="ShoppingListCell" customModule="MyShopping" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="TsD-Zj-RvO">
+                        <rect key="frame" x="20" y="12" width="240" height="144"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2YU-4k-IHc">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="68"/>
+                                <accessibility key="accessibilityConfiguration" identifier="2YU-4k-IHc"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggw-o0-Nyt">
+                                <rect key="frame" x="0.0" y="73" width="240" height="20.333333333333329"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Ggw-o0-Nyt"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbm-ek-W9F">
+                                <rect key="frame" x="0.0" y="98.333333333333329" width="240" height="20.333333333333329"/>
+                                <accessibility key="accessibilityConfiguration" identifier="tbm-ek-W9F"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVW-Kk-EDc">
+                                <rect key="frame" x="0.0" y="123.66666666666664" width="240" height="20.333333333333329"/>
+                                <accessibility key="accessibilityConfiguration" identifier="LVW-Kk-EDc"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6Z-eu-Dej">
+                        <rect key="frame" x="280" y="74" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="IU7-0y-BxK"/>
+                            <constraint firstAttribute="height" constant="20" id="h9d-8E-W0L"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="ellipsis" catalog="system"/>
+                        <connections>
+                            <action selector="didTapCellAccessory:" destination="-1" eventType="touchUpInside" id="h1C-ec-qHb"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="N6Z-eu-Dej" firstAttribute="leading" secondItem="TsD-Zj-RvO" secondAttribute="trailing" constant="20" id="8OY-ks-6qW"/>
+                    <constraint firstItem="N6Z-eu-Dej" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="CKD-HO-UVp"/>
+                    <constraint firstItem="TsD-Zj-RvO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="UQi-tI-zBP"/>
+                    <constraint firstAttribute="bottom" secondItem="TsD-Zj-RvO" secondAttribute="bottom" constant="12" id="Vke-ke-dxP"/>
+                    <constraint firstItem="TsD-Zj-RvO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="k6b-5M-gmb"/>
+                    <constraint firstAttribute="trailing" secondItem="N6Z-eu-Dej" secondAttribute="trailing" constant="20" id="ql0-kR-ZhD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <accessibility key="accessibilityConfiguration" identifier="KGk-i7-Jjw"/>
+            <connections>
+                <outlet property="notesLabel" destination="tbm-ek-W9F" id="V3G-uh-gvO"/>
+                <outlet property="quantityLabel" destination="Ggw-o0-Nyt" id="Y70-51-Xbz"/>
+                <outlet property="statusLabel" destination="LVW-Kk-EDc" id="vnv-yc-AGs"/>
+                <outlet property="titleLabel" destination="2YU-4k-IHc" id="vz7-V6-Npz"/>
+            </connections>
+            <point key="canvasLocation" x="-9.1603053435114496" y="39.436619718309863"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ellipsis" catalog="system" width="128" height="37"/>
+    </resources>
+</document>

@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "Eggs",
+        "quantity": 5,
+        "notes": "B8F1E2AB-3C2A-4D67-B8B3-4ACBC91FA927",
+        "isBought": false,
+        "createdAt": "14-05-2025",
+        "modifiedAt": "14-05-2025"
+    },
+    {
+        "id": 2,
+        "title": "Milk",
+        "quantity": 2,
+        "notes": "B8F1E2AB-3C2A-4D67-B8B3-4ACBC91FA927",
+        "isBought": false,
+        "createdAt": "14-05-2025",
+        "modifiedAt": "14-05-2025"
+    },
+    {
+        "id": 3,
+        "title": "Banana",
+        "quantity": 6,
+        "notes": "",
+        "isBought": false,
+        "createdAt": "14-05-2025",
+        "modifiedAt": "14-05-2025"
+    },
+    {
+        "id": 4,
+        "title": "Onion",
+        "quantity": 4,
+        "notes": "B8F1E2AB-3C2A-4D67-B8B3-4ACBC91FA927",
+        "isBought": false,
+        "createdAt": "14-05-2025",
+        "modifiedAt": "14-05-2025"
+    }
+]
