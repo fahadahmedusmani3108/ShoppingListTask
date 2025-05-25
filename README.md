@@ -70,6 +70,7 @@ A modern shopping list application with offline-first capabilities and real-time
 
 
 ### Code Structure
+
 MyShopping/
 ├── Features/
 │   └── ShoppingList/
@@ -87,20 +88,20 @@ MyShopping/
 │       │   └── ShoppingItemModel.swift
 │       ├── Coordinator/
 │       │   └── ShoppingCoordinator.swift
-|       ├── Services/
-│       |   ├── Networking
-|       |   |   ├── ShoppingNetworkServiceProtocol.swift
-|       |   |   └── ShoppingNetworkService.swift
-|       |   └── Database
-│       |       ├── ShoppingNetworkServiceProtocol.swift
-|       │       ├── CoreDataManager.swift
-|       │       ├── ShoppingDB.xcdatamodeld
-|       │       ├── ShoppingDBServiceProtocol.swift
-|       │       └── ShoppingDBService.swift
-|       ├── Repository/
+│       ├── Services/
+│       │   ├── Networking/
+│       │   │   ├── ShoppingNetworkServiceProtocol.swift
+│       │   │   └── ShoppingNetworkService.swift
+│       │   └── Database/
+│       │       ├── ShoppingNetworkServiceProtocol.swift
+│       │       ├── CoreDataManager.swift
+│       │       ├── ShoppingDB.xcdatamodeld
+│       │       ├── ShoppingDBServiceProtocol.swift
+│       │       └── ShoppingDBService.swift
+│       ├── Repository/
 │       │   ├── ShoppingItemRepositoryProtocol.swift
 │       │   └── ShoppingItemRepository.swift
-|       ├── DI/
+│       ├── DI/
 │       │   ├── ShoppingDIContainer.swift
 │       │   ├── ShoppingDIConfigurator.swift
 │       ├── Miscellaneous/
@@ -109,15 +110,15 @@ MyShopping/
 │       │   ├── Helpers/
 │       │   ├── Factory/
 │       │   └── Enums/
-|
+│
 └── Core/
     ├── Miscellaneous/
-    │   ├── MyShoppingSDK.swift     //initializer
-    |   ├── Extensions/
-        └── Helpers/
-            ├── CoreHelper.swift
-            ├── ShoppingBGTaskConfigurator.swift
-            └── BackgroundSyncManager.swift
+    │   ├── MyShoppingSDK.swift     // initializer
+    │   ├── Extensions/
+    │   └── Helpers/
+    │       ├── CoreHelper.swift
+    │       ├── ShoppingBGTaskConfigurator.swift
+    │       └── BackgroundSyncManager.swift
 
 
 ## Dependency Diagram
