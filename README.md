@@ -6,11 +6,12 @@ A modern shopping list application with offline-first capabilities and real-time
 
 ### High-Level Overview
 
-┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐
-│ UI Layer │ ←→ │ Domain Layer │ ←→ │ Data Layer │
-└─────────────────┘ └─────────────────┘ └─────────────────┘
-(Views) (ViewModels) (Repositories)
-
+```
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│    UI Layer     │ ←→ │  Domain Layer   │ ←→ │   Data Layer    │
+└─────────────────┘    └─────────────────┘    └─────────────────┘
+   (Views)              (ViewModels)            (Repositories)
+```
 
 ### Architecture Components
 - **MVVM-C Pattern**:
@@ -68,9 +69,8 @@ A modern shopping list application with offline-first capabilities and real-time
 3. Build and run the project
 4. You can also use framework in your host application by importing `MyShoppingSDK` module. Call MyShoppingSDK.initialize() to set up the SDK.
 
-
 ### Code Structure
-
+```
 MyShopping/
 ├── Features/
 │   └── ShoppingList/
@@ -119,6 +119,7 @@ MyShopping/
     │       ├── CoreHelper.swift
     │       ├── ShoppingBGTaskConfigurator.swift
     │       └── BackgroundSyncManager.swift
+```
 
 
 ## Dependency Diagram
